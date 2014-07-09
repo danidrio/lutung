@@ -8,7 +8,10 @@ package com.microtripit.mandrillapp.lutung.view;
  * @author rschreijer
  * @since Mar 16, 2013
  */
-public class MandrillMessageStatus {
+public class MandrillMessageStatus implements java.io.Serializable {
+	
+	private static final long serialVersionUID = 1L;
+	
 	private String email, status, reject_reason, _id;
 
 	/**
