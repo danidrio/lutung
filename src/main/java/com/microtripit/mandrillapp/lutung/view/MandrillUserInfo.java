@@ -9,7 +9,10 @@ import java.util.Date;
  * @author rschreijer
  * @since Mar 16, 2013
  */
-public class MandrillUserInfo {
+public class MandrillUserInfo implements java.io.Serializable  {
+	
+	private static final long serialVersionUID = 1L;
+	
 	private String username, public_id;
 	private Date created_at;
 	private Integer reputation, hourly_quota, backlog;
