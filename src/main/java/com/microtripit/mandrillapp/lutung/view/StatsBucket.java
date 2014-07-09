@@ -8,7 +8,10 @@ package com.microtripit.mandrillapp.lutung.view;
  * @author rschreijer
  * @since Mar 16, 2013
  */
-public class StatsBucket {
+public class StatsBucket implements java.io.Serializable {
+	
+	private static final long serialVersionUID = 1L;	
+	
 	private Stats today, last_7_days, last_30_days;
 	private Stats last_60_days, last_90_days, all_time;
 
@@ -54,7 +57,10 @@ public class StatsBucket {
 	 * @author rschreijer
 	 * @since Mar 16, 2013
 	 */
-	public static class Stats {
+	public static class Stats implements java.io.Serializable {
+		
+		private static final long serialVersionUID = 1L;		
+		
 		private Integer sent, hard_bounces, soft_bounces, rejects;
 		private Integer complaints, unsubs, opens, clicks;
 		private Integer unique_opens, unique_clicks;
